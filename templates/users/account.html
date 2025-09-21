@@ -1,0 +1,21 @@
+{% extends 'users/base.html' %}
+
+{% block title %}Мій акаунт | Black&Brew{% endblock %}
+
+{% block content %}
+  <h2>Особиста сторінка</h2>
+  <p><strong>Ім’я користувача:</strong> {{ user.username }}</p>
+  <p><strong>Дата реєстрації:</strong> {{ user.date_joined|date:"d.m.Y H:i" }}</p>
+
+  <div class="account-buttons">
+    <form action="{% url 'cart:order_history' %}" method="get">
+        <button type="submit">Історія замовлень</button>
+    </form>
+    
+    <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Вийти з акаунту</button>
+    </form>
+  </div>
+
+{% endblock %}

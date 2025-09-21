@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Реєстрація | Black&Brew</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+        body { font-family: 'Open Sans', sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333; }
+        header { background:#1e1e1e; color:#fff; padding:60px 20px; text-align:center; }
+        header h1 { font-family:'Playfair Display', serif; font-size:3.5em; margin:0; letter-spacing:2px; }
+        header p { font-size:1.2em; margin-top:15px; font-weight:300; color:#ccc; }
+        nav { background:#fff; display:flex; justify-content:center; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+        nav a { color:#1e1e1e; padding:16px 24px; text-decoration:none; font-weight:600; transition:background 0.3s, color 0.3s; }
+        nav a:hover { background:#1e1e1e; color:#fff; }
+        .fields {font-family: 'Open Sans', sans-serif; margin:10px auto; font-size:1.5em;}
+        .container { padding:0px 20px; max-width:600px; margin:70px auto; text-align:center; }
+        h2 { font-family:'Playfair Display', serif; font-size:2.5em; margin-bottom:20px; color:#1e1e1e; }
+        p {font-size:1.5em; margin:10px auto;}
+        button { margin:10px auto; font-size:1.5em;}
+        .account-buttons { display: flex; justify-content: center;gap: 12px; margin-top: 30px;}
+        footer { position: fixed; bottom: 0; width: 100%; background: #1e1e1e; color: #ccc; text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Black&Brew</h1>
+        <p>Тиша. Аромат. Кожен ковток — момент для себе.</p>
+    </header>
+
+    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+        <div style="width: 150px;"></div>
+
+        <div style="display: flex; gap: 24px;">
+            <a href="/">Головна</a>
+            <a href="/menu/">Меню</a>
+            <a href="/about/">Про нас</a>
+            <a href="/contacts/">Контакти</a>
+        </div>
+
+        <div style="display: flex; gap: 10px; width: 150px; justify-content: flex-end;">
+            <a href="/cart/">Кошик</a>
+            
+                <a href="/login/?next=/account/">Акаунт</a>
+            
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            
+  <h2>Реєстрація</h2>
+
+  <form method="post" action="/register/?next=/account/">
+    <input type="hidden" name="csrfmiddlewaretoken" value="fvugIEwNAUDlnOgCvvEX8rJQdWIN42V9PRgJfqHHHzJ0pnAi9pmFFJMeRSTInphV">
+
+    <div class="fields">
+      <strong><label for="id_username">Ім'я користувача:</label></strong><br>
+      <input
+        type="text"
+        name="username"
+        id="id_username"
+        value=""
+        required
+      >
+      
+    </div>
+
+    <div class="fields">
+      <strong><label for="id_password1">Пароль:</label></strong><br>
+      <input
+        type="password"
+        name="password1"
+        id="id_password1"
+        required
+      >
+      
+    </div>
+
+    <div class="fields">
+      <strong><label for="id_password2">Підтвердження паролю:</label></strong><br>
+      <input
+        type="password"
+        name="password2"
+        id="id_password2"
+        required
+      >
+      
+    </div>
+
+    
+      <input type="hidden" name="next" value="/account/">
+    
+
+    <button type="submit">Зареєструватися</button>
+  </form>
+
+  <p>Вже маєте акаунт?
+    <a href="/login/?next=/account/">
+      Увійти
+    </a>
+  </p>
+
+        </div>
+    </main>
+
+    <footer>
+            &copy; 2025 Black&Brew. Смакуйте момент.
+    </footer>
+
+</body>
+</html>

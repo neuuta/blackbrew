@@ -1,0 +1,923 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Невиконані замовлення | Black&Brew</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+        body { font-family: 'Open Sans', sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333; }
+        header { background:#1e1e1e; color:#fff; padding:60px 20px; text-align:center; }
+        header h1 { font-family:'Playfair Display', serif; font-size:3.5em; margin:0; letter-spacing:2px; }
+        header p { font-size:1.2em; margin-top:15px; font-weight:300; color:#ccc; }
+        nav { background:#fff; display:flex; justify-content:center; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+        nav a { color:#1e1e1e; padding:16px 24px; text-decoration:none; font-weight:600; transition:background 0.3s, color 0.3s; }
+        nav a:hover { background:#1e1e1e; color:#fff; }
+        .fields {font-family: 'Open Sans', sans-serif; margin:10px auto; font-size:1.5em;}
+        .container { padding:0px 20px; max-width:600px; margin:70px auto; text-align:center; }
+        h2, h3 { font-family:'Playfair Display', serif; font-size:2.5em; margin-bottom:20px; text-align:center; color:#1e1e1e; }
+        footer { position: fixed; bottom: 0; width: 100%; background: #1e1e1e; color: #ccc; text-align: center; padding: 20px; }
+        .schedule-table { width: 100%; max-width: 600px; margin: 30px auto; border-collapse: collapse; font-size: 1.1em; text-align: center;}
+        .schedule-table th, .schedule-table td { padding: 10px 16px; border-bottom: 1px solid #ccc; }
+        form { margin: 20px auto; max-width: 1200px; text-align: center; }
+        table { font-size: 1em; margin: 10px auto; border-collapse: collapse; width: 100%; }
+        table th, table td { padding: 5px 6px; text-align: left; border-bottom: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Black&Brew</h1>
+        <p>Зона працівників кав'ярні.</p>
+    </header>
+
+    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+
+        <div style="display: flex; gap: 24px;">
+            <a href="/work/">Головна</a>
+            <a href="/work/orders/">Поточні замовлення</a>
+            <a href="/work/orders/done/">Виконані замовлення</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            
+  <h2>Невиконані замовлення</h2>
+
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №37</strong> — 05.06.2025 11:00</p>
+      <p><strong>Ім'я:</strong> admin</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Coffee Breve</td>
+              <td>75.00 грн</td>
+              <td>2</td>
+              <td>150.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>150.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/37/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №36</strong> — 05.06.2025 10:59</p>
+      <p><strong>Ім'я:</strong> Sam</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Americano</td>
+              <td>60.00 грн</td>
+              <td>3</td>
+              <td>180.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>180.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/36/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №34</strong> — 05.06.2025 10:32</p>
+      <p><strong>Ім'я:</strong> NewUser3</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Coffee Breve</td>
+              <td>75.00 грн</td>
+              <td>1</td>
+              <td>75.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>75.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/34/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №33</strong> — 05.06.2025 10:32</p>
+      <p><strong>Ім'я:</strong> NewUser3</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Americano</td>
+              <td>60.00 грн</td>
+              <td>1</td>
+              <td>60.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>60.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/33/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №31</strong> — 05.06.2025 10:22</p>
+      <p><strong>Ім'я:</strong> NewUser3</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Americano</td>
+              <td>60.00 грн</td>
+              <td>1</td>
+              <td>60.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>60.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/31/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №30</strong> — 05.06.2025 10:21</p>
+      <p><strong>Ім'я:</strong> admin</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Late</td>
+              <td>70.00 грн</td>
+              <td>2</td>
+              <td>140.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>140.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/30/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №29</strong> — 05.06.2025 10:20</p>
+      <p><strong>Ім'я:</strong> Sam</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Late</td>
+              <td>70.00 грн</td>
+              <td>2</td>
+              <td>140.00 грн</td>
+            </tr>
+          
+            <tr>
+              <td>Late</td>
+              <td>70.00 грн</td>
+              <td>1</td>
+              <td>70.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>210.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/29/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №28</strong> — 05.06.2025 10:17</p>
+      <p><strong>Ім'я:</strong> Sam</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Americano</td>
+              <td>60.00 грн</td>
+              <td>1</td>
+              <td>60.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>60.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/28/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №27</strong> — 05.06.2025 10:12</p>
+      <p><strong>Ім'я:</strong> 12</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Late</td>
+              <td>70.00 грн</td>
+              <td>1</td>
+              <td>70.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>70.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/27/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №26</strong> — 03.06.2025 11:17</p>
+      <p><strong>Ім'я:</strong> admin</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Glace</td>
+              <td>90.00 грн</td>
+              <td>1</td>
+              <td>90.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>90.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/26/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №25</strong> — 02.06.2025 19:41</p>
+      <p><strong>Ім'я:</strong> admin</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Cappuccino</td>
+              <td>70.00 грн</td>
+              <td>3</td>
+              <td>210.00 грн</td>
+            </tr>
+          
+            <tr>
+              <td>Iced Coffee</td>
+              <td>70.00 грн</td>
+              <td>1</td>
+              <td>70.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>280.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/25/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №24</strong> — 02.06.2025 09:12</p>
+      <p><strong>Ім'я:</strong> tea</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Americano</td>
+              <td>60.00 грн</td>
+              <td>1</td>
+              <td>60.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>60.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/24/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №22</strong> — 29.05.2025 19:18</p>
+      <p><strong>Ім'я:</strong> Franco</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Late</td>
+              <td>70.00 грн</td>
+              <td>2</td>
+              <td>140.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>140.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/22/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №20</strong> — 27.05.2025 16:53</p>
+      <p><strong>Ім'я:</strong> NewUser</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Late</td>
+              <td>70.00 грн</td>
+              <td>3</td>
+              <td>210.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>210.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/20/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №18</strong> — 27.05.2025 13:59</p>
+      <p><strong>Ім'я:</strong> aba</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Late</td>
+              <td>70.00 грн</td>
+              <td>1</td>
+              <td>70.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>70.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/18/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №17</strong> — 27.05.2025 13:58</p>
+      <p><strong>Ім'я:</strong> 4</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Americano</td>
+              <td>60.00 грн</td>
+              <td>1</td>
+              <td>60.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>60.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/17/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №16</strong> — 27.05.2025 13:54</p>
+      <p><strong>Ім'я:</strong> 1</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Late</td>
+              <td>70.00 грн</td>
+              <td>1</td>
+              <td>70.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>70.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/16/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №15</strong> — 27.05.2025 13:52</p>
+      <p><strong>Ім'я:</strong> bib</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Late</td>
+              <td>70.00 грн</td>
+              <td>1</td>
+              <td>70.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>70.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/15/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №14</strong> — 27.05.2025 13:51</p>
+      <p><strong>Ім'я:</strong> bib</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Americano</td>
+              <td>60.00 грн</td>
+              <td>1</td>
+              <td>60.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>60.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/14/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №13</strong> — 27.05.2025 13:47</p>
+      <p><strong>Ім'я:</strong> Grok</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Americano</td>
+              <td>60.00 грн</td>
+              <td>1</td>
+              <td>60.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>60.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/13/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №12</strong> — 27.05.2025 11:31</p>
+      <p><strong>Ім'я:</strong> bob</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Americano</td>
+              <td>60.00 грн</td>
+              <td>29</td>
+              <td>1740.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>1740.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/12/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №11</strong> — 27.05.2025 11:28</p>
+      <p><strong>Ім'я:</strong> bob</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Americano</td>
+              <td>60.00 грн</td>
+              <td>40</td>
+              <td>2400.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>2400.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/11/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:20px; background: #fdfdfd;">
+      <p><strong>Замовлення №10</strong> — 27.05.2025 11:28</p>
+      <p><strong>Ім'я:</strong> L</p>
+
+      <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Сума</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>Americano</td>
+              <td>60.00 грн</td>
+              <td>20</td>
+              <td>1200.00 грн</td>
+            </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Загальна сума:</strong></td>
+            <td><strong>1200.00 грн</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form method="post" action="/work/orders/complete/10/" style="margin-top: 10px; text-align: right;">
+        <input type="hidden" name="csrfmiddlewaretoken" value="iZoeKNe13IiYFc2sl8eWhpPshhS72uzhlgk3S3KcfMaZoBsWTsb0Vqq6eUilxYgL">
+        <button type="submit">Позначити як виконане</button>
+      </form>
+    </div>
+  
+
+        </div>
+    </main>
+
+    <footer>
+            &copy; 2025 Black&Brew. Work zone.
+    </footer>
+
+</body>
+</html>
